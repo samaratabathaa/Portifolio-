@@ -16,11 +16,11 @@
       theme: {
         extend: {
           colors: {
-            darkBg: '#0F0406',         // Fundo super escuro com tom vinho/café
-            cardBg: 'rgba(25, 8, 12, 0.65)', // Fundo dos cards translúcido com tom de vinho escuro
-            neonRed: '#FF2A5F',        // Vinho/Vermelho vibrante
-            deepWine: '#6B001B',       // Vinho profundo/fechado
-            crimsonRed: '#900C3F'      // Vermelho vinho elétrico/intenso
+            darkBg: '#0F0406',         // Fundo super escuro com tom vinho
+            cardBg: 'rgba(25, 8, 12, 0.65)', // Fundo dos cards com tom de vinho escuro
+            neonRed: '#FF2A5F',        // Vinho 
+            deepWine: '#6B001B',       // Vinho profundo
+            crimsonRed: '#900C3F'      // Vermelho vinho intenso
           },  
           fontFamily: {
             sans: ['Inter', 'sans-serif'],
@@ -41,7 +41,6 @@
       overflow-x: hidden;
     }
 
-    /* Custom Glassmorphism & Neon Glow (Vinho) */
     .glass-card {
       background: rgba(25, 8, 12, 0.6);
       backdrop-filter: blur(16px);
@@ -83,8 +82,7 @@
     ::-webkit-scrollbar-thumb:hover {
       background: #FF2A5F;
     }
-
-    /* Fade-in animations */
+    
     .fade-up {
       opacity: 0;
       transform: translateY(30px);
@@ -494,10 +492,10 @@
   </div>
 
   <script>
-    // Initialize Lucide Icons
+    
     lucide.createIcons();
 
-    // Mobile Menu Toggle
+    
     const menuBtn = document.getElementById('menu-btn');
     const mobileMenu = document.getElementById('mobile-menu');
     menuBtn.addEventListener('click', () => {
@@ -574,7 +572,7 @@
       }
     });
 
-    // Intersection Observer for Smooth Scroll Animations
+    
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
